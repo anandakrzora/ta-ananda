@@ -21,3 +21,7 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+
+
+/resources/views/dashboard-template
+/public/vendor/
