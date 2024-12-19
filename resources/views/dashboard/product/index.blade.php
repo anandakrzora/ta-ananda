@@ -50,7 +50,11 @@
                                     <tr class="odd">
                                         <td class="sorting_1">{{ $loop->iteration }}</td>
                                         <td>{{ $p->title }}</td>
-                                        <td class="text-center"><span class="badge badge-success p-2">{{ $p->status }}</span></td>
+                                        <td class="text-center">
+                                            <span class="badge p-2 {{ $p->status == 'terjual' ? 'badge-success' : 'badge-warning' }}">
+                                                {{ $p->status == 'terjual' ? 'Terjual' : 'Dijual' }}
+                                            </span>
+                                        </td>
                                         <td>{{ $p->formatted_price = 'Rp ' . number_format($p->price, 0, ',', '.'); }}</td>
                                         <td>{{ $p->description }}</td>
                                         <td class="text-center"><img src="{{ asset('img/product/'.$p->image) }}" alt="{{ $p->title }}" width="300px"></td>
