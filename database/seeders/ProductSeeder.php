@@ -20,6 +20,7 @@ class ProductSeeder extends Seeder
             'status' => 'dijual',
             'price' => 25000000,
             'description' => 'Motor sport dengan desain aerodinamis dan performa tinggi.',
+            'image'=>'motor.png'
         ]);
     }
 }

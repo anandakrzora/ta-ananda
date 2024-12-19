@@ -29,13 +29,13 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="#" d>
+                <a class="nav-link" href="{{ route('product.index') }}">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Product</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" d>
+                <a class="nav-link" href="#">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Galery</span>
                 </a>

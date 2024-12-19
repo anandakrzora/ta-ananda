@@ -20,6 +20,8 @@
     <!-- Custom styles for this template-->
     <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
 
+    <!-- Custom styles for this page -->
+    <link href="{{ asset('vendor/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
 
 </head>
 
@@ -46,12 +48,8 @@
                         <h1 class="h3 mb-0 text-gray-800">@yield('dashboard-title', 'Default Title')</h1>
                     </div>
 
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        @yield('content')
-
-                    </div>
+                    <!-- Content -->
+                    @yield('content')
 
                 </div>
                 <!-- /.container-fluid -->
