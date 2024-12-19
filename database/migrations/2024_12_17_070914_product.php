@@ -18,6 +18,7 @@ return new class extends Migration
             $table->enum('status', ['dijual', 'terjual']); // status dengan tipe integer
             $table->integer('price'); // price dengan tipe integer
             $table->text('description')->nullable(); // description dengan tipe text
+            $table->text('image')->nullable(); // description dengan tipe text
             $table->timestamps(); // created_at dan updated_at otomatis
 
             $table->foreign('id_user')
