@@ -9,7 +9,7 @@
                     <p class="m-0 font-weight-bold text-danger">Tabel Product Motor</p>
                 </div>
                     <div class="col-4 row justify-content-end m-0">
-                        <a class="btn btn-primary" href="#">Tambah Data</a>
+                        <a class="btn btn-primary" href="{{ route('product.create') }}">Tambah Data</a>
                     </div>
               </div>
             <br>
@@ -53,10 +53,14 @@
                                         <td class="text-center"><span class="badge badge-success p-2">{{ $p->status }}</span></td>
                                         <td>{{ $p->formatted_price = 'Rp ' . number_format($p->price, 0, ',', '.'); }}</td>
                                         <td>{{ $p->description }}</td>
-                                        <td><img src="{{ asset('img/'.$p->image) }}" alt="{{ $p->title }}"></td>
+                                        <td class="text-center"><img src="{{ asset('img/product/'.$p->image) }}" alt="{{ $p->title }}" width="300px"></td>
                                         <td class="d-flex justify-content-center">
-                                                <button type="button" class="btn btn-warning mr-2">Edit</button>
-                                                <button type="button" class="btn btn-danger">Delete</button>
+                                                <a type="button" class="btn btn-warning mr-2" href="{{ route('product.edit',$p->id) }}">Edit</a>
+                                                <form action="{{ route('product.destroy', $p->id) }}" method="POST" style="display: inline;">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" class="btn btn-danger delete">Delete</button>
+                                                </form>
                                         </td>
                                     </tr>
                                     @endforeach

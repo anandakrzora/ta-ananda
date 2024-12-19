@@ -12,6 +12,9 @@
 <!-- Page level custom scripts -->
 <script src="{{ asset('js/demo/datatables-demo.js') }}"></script>
 
+<!--Sweat Alert JS-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 <script>
     // Event handler untuk tombol delete
     document.querySelectorAll('.delete').forEach(function(button) {
