@@ -7,14 +7,9 @@ use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomepageController::class, 'index'])->name('home');
+Route::get('/product',[HomepageController::class, 'allProduct'])->name('product-all');
+Route::get('/product/detail/{id}',[HomepageController::class, 'detail'])->name('product-detail');
 
-Route::get('/product', function(){
-    return view('public.all-product');
-})->name('product');
-
-Route::get('/product/detail', function(){
-    return view('public.detail-product');
-})->name('product-detail');
 
 Route::get('/login', function(){
     return view('dashboard.login');
