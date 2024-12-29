@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\TestimoniController;
 use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
@@ -38,3 +39,10 @@ Route::get('/dashboard/product/edit/{id}',[ProductController::class, 'edit'])->n
 Route::put('/dashboard/product/update/{id}',[ProductController::class, 'update'])->name("product.update");
 Route::delete('/dashboard/product/delete/{id}',[ProductController::class, 'destroy'])->name("product.destroy");
 
+
+Route::get('/dashboard/testimoni',[TestimoniController::class, 'index'])->name("testimoni.index");
+Route::get('/dashboard/testimoni/create',[TestimoniController::class, 'create'])->name("testimoni.create");
+Route::post('/dashboard/testimoni/store',[TestimoniController::class, 'store'])->name("testimoni.store");
+Route::get('/dashboard/testimoni/edit/{id}',[TestimoniController::class, 'edit'])->name("testimoni.edit");
+Route::put('/dashboard/testimoni/update/{id}',[TestimoniController::class, 'update'])->name("testimoni.update");
+Route::delete('/dashboard/testimoni/delete/{id}',[TestimoniController::class, 'destroy'])->name("testimoni.destroy");
