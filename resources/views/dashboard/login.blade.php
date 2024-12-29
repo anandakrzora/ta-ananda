@@ -52,7 +52,7 @@
                                                 <label for="password" class="mb-2">Password</label>
                                                 <input type="password" class="form-control form-control-user" name="password" placeholder="Password">
                                             </div>
-                                            <a href="#" class="btn btn-danger btn-user btn-block">
+                                            <a href="{{ route('main.dasboard') }}" class="btn btn-danger btn-user btn-block">
                                                 Login
                                             </a>
                                         </form>
