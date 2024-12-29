@@ -4,7 +4,7 @@
     <!-- Grid -->
     <div class="grid lg:grid-cols-7 lg:gap-x-8 xl:gap-x-12 lg:items-center">
         <div class="lg:col-span-4 mt-10 lg:mt-0">
-            <img class="w-full rounded-sm" src="{{ asset('img/showroom.png') }}" alt="Hero Image">
+            <img class="w-full rounded-sm" src="{{ asset('img/showroom.jpeg') }}" alt="Hero Image">
         </div>
 
       <div class="lg:col-span-3 mt-5">

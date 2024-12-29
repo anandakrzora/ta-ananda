@@ -21,9 +21,10 @@ class Product extends Model
         'kondisi_body',
         'kondisi_kelistrikan',
         'kondisi_surat',
-        'kondisi_mesin'
+        'kondisi_mesin',
+        'transmision',
+        'passenger'
     ];
-
     public function user()
     {
         return $this->belongsTo(User::class, 'id_user');

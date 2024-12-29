@@ -32,6 +32,8 @@
                                     <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 67px;">Kondisi Kelistrikan</th>
                                     <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 67px;">Kondisi Surat</th>
                                     <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 67px;">Kondisi Mesin</th>
+                                    <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 67px;">Transmisi</th>
+                                    <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 67px;">Penumpang</th>
                                     <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 67px;">Aksi</th>
                                 </tr>
                             </thead>
@@ -63,6 +65,8 @@
                                     <td>{{ $p->kondisi_kelistrikan ?? '-' }}</td>
                                     <td>{{ $p->kondisi_surat ?? '-' }}</td>
                                     <td>{{ $p->kondisi_mesin ?? '-' }}</td>
+                                    <td>{{ $p->transmision ?? '-' }}</td>
+                                    <td>{{ $p->passenger ?? '-' }}</td>
                                     <td class="d-flex justify-content-center">
                                         <a type="button" class="btn btn-warning mr-2" href="{{ route('product.edit', $p->id) }}">Edit</a>
                                         <form action="{{ route('product.destroy', $p->id) }}" method="POST" style="display: inline;">

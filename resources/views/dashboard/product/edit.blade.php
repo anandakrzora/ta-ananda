@@ -122,6 +122,21 @@
                         <div class="alert alert-danger mt-2">{{ $message }}</div>
                     @enderror
                 </div>
+                <div class="form-group">
+                    <label>Transmisi</label>
+                    <input type="text" name="transmision" class="form-control" placeholder="Masukkan Transmisi" value="{{ old('transmision', $product->transmision) }}">
+                    @error('transmision')
+                        <div class="alert alert-danger mt-2">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <div class="form-group">
+                    <label>Penumpang</label>
+                    <input type="text" name="passenger" class="form-control" placeholder="Masukkan Jumlah Penumpang" value="{{ old('passenger', $product->passenger) }}">
+                    @error('passenger')
+                        <div class="alert alert-danger mt-2">{{ $message }}</div>
+                    @enderror
+                </div>
                 
                 <!-- Add other condition fields similarly -->
 

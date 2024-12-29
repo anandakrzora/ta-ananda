@@ -99,6 +99,21 @@
                         <div class="alert alert-danger mt-2">{{ $message }}</div>
                     @enderror
                 </div>
+                <div class="form-group">
+                    <label>Transmisi</label>
+                    <input type="text" name="transmision" class="form-control" placeholder="Masukkan Transmisi" value="{{ old('transmision') }}">
+                    @error('transmision')
+                        <div class="alert alert-danger mt-2">{{ $message }}</div>
+                    @enderror
+                </div>
+                <div class="form-group">
+                    <label>Jumlah Penumpang</label>
+                    <input type="number" name="passenger" class="form-control" placeholder="Masukkan Jumlah Penumpang" value="{{ old('passenger') }}">
+                    @error('passenger')
+                        <div class="alert alert-danger mt-2">{{ $message }}</div>
+                    @enderror
+                </div>
+
                 <button type="submit" class="btn btn-primary mt-3">Submit</button>
               </form>
         </div>

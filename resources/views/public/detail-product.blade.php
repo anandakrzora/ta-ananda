@@ -15,8 +15,8 @@
     <div>
         @include('public.layout.partials.navbar')
         <div class="max-w-[85rem] px-4 sm:px-6 lg:px-8 mt-5 mx-auto">
-            <p class="text-gray-400"> <a href="">Product / </a>
-                <span class="text-red-600 font-medium text-base text-lg">Scoopy ESP 2019</span>
+            <p class="text-gray-400"> <a href="{{ route('product-all') }}">Product / </a>
+                <span class="text-red-600 font-medium text-base text-lg">{{ $product->title }}</span>
             </p>
         </div>
     </div>
@@ -38,18 +38,18 @@
                                 class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
                                 <div class="hs-carousel-slide">
                                     <div class="flex justify-center h-full  p-2">
-                                        <img class=" self-center transition duration-700 object-cover" src="https://imgcdn.oto.com/large/gallery/color/73/985/honda-scoopy-esp-color-279822.jpg">
+                                        <img class=" self-center transition duration-700 object-cover" src="{{ asset('img/product/' . $product->gambar1) }}">
                                     </div>
                                 </div>
                                 <div class="hs-carousel-slide">
                                     <div class="flex justify-center h-full p-2">
-                                        <img class="self-center transition duration-700 object-cover" src="https://imgcdn.oto.com/large/gallery/color/73/985/honda-scoopy-esp-color-123949.jpg">
+                                        <img class="self-center transition duration-700 object-cover" src="{{ asset('img/product/' . $product->gambar2) }}">
                                     </div>
                                 </div>
                                 <div class="hs-carousel-slide">
                                     <div class="flex justify-center h-full  p-2">
                                         <img class="self-center transition duration-700 object-cover"
-                                            src="https://imgcdn.oto.com/large/gallery/color/73/985/honda-scoopy-esp-color-768616.jpg">
+                                            src="{{ asset('img/product/' . $product->gambar3) }}">
                                     </div>
                                 </div>
                             </div>
@@ -88,21 +88,21 @@
                                     class="hs-carousel-pagination-item shrink-0 border rounded-md overflow-hidden cursor-pointer w-[150px] h-[100px] hs-carousel-active:border-red-400">
                                     <div class="flex justify-center h-full bg-gray-100">
                                         <img class="self-center transition duration-700 object-cover"
-                                            src="https://imgcdn.oto.com/large/gallery/color/73/985/honda-scoopy-esp-color-279822.jpg">
+                                            src="{{ asset('img/product/' . $product->gambar1) }}">
                                     </div>
                                 </div>
                                 <div
                                     class="hs-carousel-pagination-item shrink-0 border rounded-md overflow-hidden cursor-pointer w-[150px] h-[100px]  hs-carousel-active:border-red-400">
                                     <div class="flex justify-center h-full bg-gray-200">
                                         <img class="self-center transition duration-700 object-cover"
-                                            src="https://imgcdn.oto.com/large/gallery/color/73/985/honda-scoopy-esp-color-123949.jpg">
+                                            src="{{ asset('img/product/' . $product->gambar2) }}">
                                     </div>
                                 </div>
                                 <div
                                     class="hs-carousel-pagination-item shrink-0 border rounded-md overflow-hidden cursor-pointer w-[150px] h-[100px] hs-carousel-active:border-red-400">
                                     <div class="flex justify-center h-full">
                                         <img class="self-center transition duration-700 object-cover"
-                                            src="https://imgcdn.oto.com/large/gallery/color/73/985/honda-scoopy-esp-color-768616.jpg">
+                                            src="{{ asset('img/product/' . $product->gambar3) }}">
                                     </div>
                                 </div>
                             </div>
@@ -119,26 +119,28 @@
                         <!-- Title -->
                         <div class="space-y-2 md:space-y-4">
                             <h2 class="font-bold text-3xl lg:text-4xl text-gray-800">
-                                Scoopy ESP 2019
+                                {{ $product->title }}
                             </h2>
                             <h3 class="font-bold text-2xl lg:text-3xl text-red-600">
-                                Rp. 17.000.000
+                                Rp {{ number_format($product->price, 0, ',', '.') }}
                             </h3>
                             <p class="text-gray-500">
-                                Dijual motor siap pakai Cash/credit Honda scoopy ESP Tahun 2019
+                                {{ $product->description }}
                             </p>
                             <p class="text-gray-500">
                                 KONDISI
                             </p>
                             <!-- List -->
                             <ul class="space-y-2 sm:space-y-4 text-sm sm:text-base text-gray-500">
-                                <li>body mulus halus</li>
-                                <li>mesin joss terawat, sudah service &
-                                    Ganti oli</li>
-                                <li>kelistrikan hidup atas bawah</li>
-                                <li>Surat BPKB ready & pajak hidup</li>
+                                <li>Body : {{ $product->kondisi_body }}</li>
+                                <li>Mesin : {{ $product->kondisi_mesin }}</li>
+                                <li>Kelistrikan : {{ $product->kondisi_kelistrikan }}</li>
+                                <li>Surat : {{ $product->kondisi_surat }}</li>
                             </ul>
                             <!-- End List -->
+                            <p class="text-gray-500 font-semibold">
+                               DP Mulai dari Rp {{ number_format($product->dp_price, 0, ',', '.') }}
+                            </p>
                         </div>
                         <!-- End Title -->
 
