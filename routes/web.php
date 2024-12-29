@@ -1,13 +1,12 @@
 <?php
 
+use App\Http\Controllers\HomepageController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TestimoniController;
 use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function(){
-    return view('public.index');
-})->name('home');
+Route::get('/', [HomepageController::class, 'index'])->name('home');
 
 Route::get('/product', function(){
     return view('public.all-product');

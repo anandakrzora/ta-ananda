@@ -32,7 +32,9 @@ class ProductController extends Controller
             'kondisi_body' => 'required|string|max:255',
             'kondisi_kelistrikan' => 'required|string|max:255',
             'kondisi_surat' => 'required|string|max:255',
-            'kondisi_mesin' => 'required|string|max:255'
+            'kondisi_mesin' => 'required|string|max:255',
+            'transmision' => 'required|string|max:255',
+            'passenger' => 'required|integer|min:1'
         ], [
             'title.required' => 'Nama produk wajib diisi.',
             'title.string' => 'Nama produk harus berupa teks.',
@@ -81,6 +83,14 @@ class ProductController extends Controller
             'kondisi_mesin.required' => 'Kondisi mesin wajib diisi.',
             'kondisi_mesin.string' => 'Kondisi mesin harus berupa teks.',
             'kondisi_mesin.max' => 'Kondisi mesin tidak boleh lebih dari 255 karakter.',
+
+            'transmision.required' => 'Transmisi wajib diisi.',
+            'transmision.string' => 'Transmisi harus berupa teks.',
+            'transmision.max' => 'Transmisi tidak boleh lebih dari 255 karakter.',
+
+            'passenger.required' => 'Jumlah penumpang wajib diisi.',
+            'passenger.integer' => 'Jumlah penumpang harus berupa angka.',
+            'passenger.min' => 'Jumlah penumpang harus lebih dari 0.'
         ]);
 
         $titleSlug = str_replace(' ', '', $validatedData['title']);
@@ -110,7 +120,9 @@ class ProductController extends Controller
             'kondisi_body' => $validatedData['kondisi_body'],
             'kondisi_kelistrikan' => $validatedData['kondisi_kelistrikan'],
             'kondisi_surat' => $validatedData['kondisi_surat'],
-            'kondisi_mesin' => $validatedData['kondisi_mesin']
+            'kondisi_mesin' => $validatedData['kondisi_mesin'],
+            'transmision' => $validatedData['transmision'],
+            'passenger' => $validatedData['passenger']
         ];
 
         Product::create($data);
@@ -144,6 +156,8 @@ class ProductController extends Controller
             'kondisi_kelistrikan' => 'required|string|max:255',
             'kondisi_surat' => 'required|string|max:255',
             'kondisi_mesin' => 'required|string|max:255',
+            'transmision' => 'required|string|max:255',
+            'passenger' => 'required|integer|min:1'
         ], [
             'title.required' => 'Nama produk wajib diisi.',
             'title.string' => 'Nama produk harus berupa teks.',
@@ -191,6 +205,14 @@ class ProductController extends Controller
             'kondisi_mesin.required' => 'Kondisi mesin wajib diisi.',
             'kondisi_mesin.string' => 'Kondisi mesin harus berupa teks.',
             'kondisi_mesin.max' => 'Kondisi mesin tidak boleh lebih dari 255 karakter.',
+
+            'transmision.required' => 'Transmisi wajib diisi.',
+            'transmision.string' => 'Transmisi harus berupa teks.',
+            'transmision.max' => 'Transmisi tidak boleh lebih dari 255 karakter.',
+
+            'passenger.required' => 'Jumlah penumpang wajib diisi.',
+            'passenger.integer' => 'Jumlah penumpang harus berupa angka.',
+            'passenger.min' => 'Jumlah penumpang harus lebih dari 0.'
         ]);
 
         $titleSlug = str_replace(' ', '', $validatedData['title']);
@@ -223,7 +245,9 @@ class ProductController extends Controller
             'kondisi_body' => $validatedData['kondisi_body'],
             'kondisi_kelistrikan' => $validatedData['kondisi_kelistrikan'],
             'kondisi_surat' => $validatedData['kondisi_surat'],
-            'kondisi_mesin' => $validatedData['kondisi_mesin']
+            'kondisi_mesin' => $validatedData['kondisi_mesin'],
+            'transmision' => $validatedData['transmision'],
+            'passenger' => $validatedData['passenger']
         ];
 
         $product->update($data);
