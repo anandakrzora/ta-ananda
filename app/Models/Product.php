@@ -13,8 +13,15 @@ class Product extends Model
         'title',
         'status',
         'price',
+        'dp_price',
         'description',
-        'image'
+        'gambar1',
+        'gambar2',
+        'gambar3',
+        'kondisi_body',
+        'kondisi_kelistrikan',
+        'kondisi_surat',
+        'kondisi_mesin'
     ];
 
     public function user()
