@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Galery;
 use App\Models\Product;
 use App\Models\Testimoni;
 use Illuminate\Http\Request;
@@ -12,11 +13,12 @@ class HomepageController extends Controller
     public function index()
     {
         $testimoni = Testimoni::orderBy('created_at', 'desc')->take(5)->get();
+        $galery = Galery::all();
         $product = Product::where('status', 'dijual')
             ->orderBy('created_at', 'desc')
             ->take(4)
-            ->get(['id', 'title', 'price', 'transmision', 'passenger', 'gambar1']);
-        return view('public.index', compact('product', 'testimoni'));
+            ->get(['id', 'title', 'price', 'transmision', 'passenger', 'gambar1', 'status']);
+        return view('public.index', compact('product', 'testimoni', 'galery'));
     }
 
     public function detail(string $id)
@@ -30,7 +32,7 @@ class HomepageController extends Controller
     {
         $product = Product::where('status', 'dijual')
             ->orderBy('created_at', 'desc')
-            ->get(['id', 'title', 'price', 'transmision', 'passenger', 'gambar1']);
+            ->get(['id', 'title', 'price', 'transmision', 'passenger', 'gambar1', 'status']);
         return view('public.all-product', compact('product'));
     }
 

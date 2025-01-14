@@ -1,11 +1,11 @@
-<div class="container px-4 max-w-[85rem] mx-auto">
+<div class="container px-4 max-w-[85rem] mx-auto sticky top-0 bg-slate-50 bg-opacity-90 z-50">
     <!-- ========== HEADER ========== -->
-    <header class="sticky top-4 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full border-b border-solid border-gray-200">
-        <nav class="relative max-w-[85rem] mx-auto w-full md:flex md:items-center md:justify-between md:gap-3 ">
+    <header class="inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full border-b border-solid border-gray-200">
+        <nav class="max-w-[85rem] mx-auto w-full md:flex md:items-center md:justify-between md:gap-3">
             <!-- Logo w/ Collapse Button -->
             <div class="flex items-center justify-between">
                 <!-- Logo Image -->
-                <img src="http://127.0.0.1:8000/img/LOGO.jpeg" alt="UD BAWA MOTOR" class="w-20 object-contain">
+                <img src="{{ asset('img/LOGO.png') }}" alt="UD BAWA MOTOR" class="w-20 object-contain">
 
                 <!-- Brand Name -->
                 <a class="flex-none font-bold text-xl text-red-600 focus:outline-none focus:opacity-80 hidden sm:hidden md:hidden lg:block" href="{{ route('home') }}" aria-label="Brand">Bawa Motor</a>
@@ -31,9 +31,9 @@
 
             <!-- Collapse -->
             <div id="hs-header-classic" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block" aria-labelledby="hs-header-classic-collapse">
-                <div class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300">
+                <div class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 ">
                     <div class="py-2 md:py-0 flex flex-col md:flex-row md:items-center md:justify-end gap-0.5 md:gap-1">
-                        <a class="p-2 flex items-center text-sm text-dark-600 focus:outline-none lg:font-semibold font-medium" href="{{ url('/#about') }}" aria-current="page">
+                        <a class="p-2 flex items-center text-sm text-dark-600 focus:outline-none hover:text-red-500 hover:font-bold" href="#about" aria-current="page">
                             <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
                                 <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
@@ -56,7 +56,7 @@
                                 <path d="M22 13a18.15 18.15 0 0 1-20 0"></path>
                                 <rect width="20" height="14" x="2" y="6" rx="2"></rect>
                             </svg>
-                            Testimoni
+                            Galery
                         </a>
 
                         <a class="p-2 flex items-center text-sm text-gray-800 hover:text-red-500 hover:font-bold focus:outline-none focus:text-gray-500" href="{{ url('/#contact') }}">
@@ -69,7 +69,7 @@
                             Kontak Kami
                         </a>
 
-                        <!-- Button Group -->
+                        {{-- <!-- Button Group -->
                         <div class="relative flex flex-wrap items-center gap-x-1.5 md:ps-2.5 md:ms-1.5 before:block before:absolute before:top-1/2 before:-start-px before:w-px before:h-4 before:bg-gray-300 before:-translate-y-1/2">
                             <a class="p-2 w-full flex items-center text-sm text-gray-800 hover:text-gray-500 focus:outline-none focus:text-gray-500" href="{{ route('login') }}">
                                 <svg class="shrink-0 size-4 me-3 md:me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -78,7 +78,7 @@
                                 </svg>
                                 Log in
                             </a>
-                        </div>
+                        </div> --}}
                         <!-- End Button Group -->
                     </div>
                 </div>

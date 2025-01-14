@@ -23,7 +23,7 @@
         @include('public.layout.partials.product')
     </div>
     <div>
-        @include('public.layout.partials.testimoni')
+        @include('public.layout.partials.testimoni-galery')
     </div>
     <div>
         @include('public.layout.partials.contact')
