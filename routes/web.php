@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\HomepageController;
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\TestimoniController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GaleryController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\HomepageController;
+use App\Http\Controllers\TestimoniController;
 
 Route::get('/', [HomepageController::class, 'index'])->name('home');
 Route::get('/product', [HomepageController::class, 'allProduct'])->name('product-all');
@@ -26,10 +27,15 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/dashboard/product/delete/{id}', [ProductController::class, 'destroy'])->name("product.destroy");
 
 
-    Route::get('/dashboard/testimoni', [TestimoniController::class, 'index'])->name("testimoni.index");
-    Route::get('/dashboard/testimoni/create', [TestimoniController::class, 'create'])->name("testimoni.create");
-    Route::post('/dashboard/testimoni/store', [TestimoniController::class, 'store'])->name("testimoni.store");
-    Route::get('/dashboard/testimoni/edit/{id}', [TestimoniController::class, 'edit'])->name("testimoni.edit");
-    Route::put('/dashboard/testimoni/update/{id}', [TestimoniController::class, 'update'])->name("testimoni.update");
-    Route::delete('/dashboard/testimoni/delete/{id}', [TestimoniController::class, 'destroy'])->name("testimoni.destroy");
+    // Route::get('/dashboard/testimoni', [TestimoniController::class, 'index'])->name("testimoni.index");
+    // Route::get('/dashboard/testimoni/create', [TestimoniController::class, 'create'])->name("testimoni.create");
+    // Route::post('/dashboard/testimoni/store', [TestimoniController::class, 'store'])->name("testimoni.store");
+    // Route::get('/dashboard/testimoni/edit/{id}', [TestimoniController::class, 'edit'])->name("testimoni.edit");
+    // Route::put('/dashboard/testimoni/update/{id}', [TestimoniController::class, 'update'])->name("testimoni.update");
+    // Route::delete('/dashboard/testimoni/delete/{id}', [TestimoniController::class, 'destroy'])->name("testimoni.destroy");
+
+    Route::get('/dashboard/galery', [GaleryController::class, 'index'])->name("galery.index");
+    Route::get('/dashboard/galery/create', [GaleryController::class, 'create'])->name("galery.create");
+    Route::post('/dashboard/galery/store', [GaleryController::class, 'store'])->name("galery.store");
+    Route::delete('/dashboard/galery/delete/{id}', [GaleryController::class, 'destroy'])->name("galery.destroy");
 });

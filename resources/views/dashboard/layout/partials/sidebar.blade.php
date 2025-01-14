@@ -34,10 +34,16 @@
                     <span>Product</span>
                 </a>
             </li>
-            <li class="nav-item {{ Route::is('testimoni.*') ? 'active' : '' }}">
+            {{-- <li class="nav-item {{ Route::is('testimoni.*') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('testimoni.index') }}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square-more"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/></svg>
                     <span>Testimoni</span>
+                </a>
+            </li> --}}
+            <li class="nav-item {{ Route::is('galery.*') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('galery.index') }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square-more"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/></svg>
+                    <span>Galery</span>
                 </a>
             </li>
 
