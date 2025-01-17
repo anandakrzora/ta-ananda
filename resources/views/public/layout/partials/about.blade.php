@@ -4,7 +4,14 @@
     <!-- Grid -->
     <div class="grid lg:grid-cols-7 lg:gap-x-8 xl:gap-x-12 lg:items-center">
         <div class="lg:col-span-4 mt-10 lg:mt-0">
-            <img class="w-full rounded-sm" src="{{ asset('img/showroom.jpeg') }}" alt="Hero Image">
+          <iframe class="w-full rounded-sm" 
+            height="400" 
+            src="https://www.youtube.com/embed/5vVACVZVMKA" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
         </div>
 
       <div class="lg:col-span-3 mt-5">
