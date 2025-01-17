@@ -8,7 +8,7 @@
             
             <div class="space-x-4 mt-4">
                 <!-- Facebook -->
-                <a class="inline-block text-white hover:text-gray-400 focus:outline-none focus:text-gray-800" href="#">
+                <a class="inline-block text-white hover:text-gray-400 focus:outline-none focus:text-gray-800" href="https://www.facebook.com/share/1jNRyH49oLFYWbd6/" target="blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                 </a>
                 <!-- Instagram -->
@@ -29,7 +29,7 @@
             <ul class="mt-3 space-y-2 text-sm text-white">
                 <li><a class="hover:text-slate-400" href="#about">About</a></li>
                 <li><a class="hover:text-slate-400" href="#product">Product</a></li>
-                <li><a class="hover:text-slate-400" href="#testimoni">Testimoni</a></li>
+                <li><a class="hover:text-slate-400" href="#testimoni">Galery</a></li>
                 <li><a class="hover:text-slate-400" href="#contact">Kontak Kami</a></li>
             </ul>
         </div>

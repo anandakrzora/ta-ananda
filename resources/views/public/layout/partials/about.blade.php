@@ -12,7 +12,7 @@
         <p class="mt-5 text-normal text-gray-500 text-justify tracking-wide">UD. Bawa Motor merupakan Showroom yang bergerak khusus dalam jual beli motor bekas yang melayani pembelian secara tunai maupun kredit, serta menawarkan opsi tukar tambah. Showroom ini didirikan oleh Anugrah Nurprebawa pada 16 Februari 2021 dan memiliki jargon "Come, Choose, and Take" </p>
   
         <div class="mt-5 lg:mt-8 flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
-          <a class="w-full sm:w-auto py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-red-600 text-white hover:bg-red-700 focus:outline-none focus:bg-red-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
+          <a class="w-full sm:w-auto py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-red-600 text-white hover:bg-red-700 focus:outline-none focus:bg-red-700 disabled:opacity-50 disabled:pointer-events-none" href="https://wa.me/6282144428903?text=Saya%20ingin%20menanyakan%20tentang%20produk%20ini...">
             Contact
           </a>
         </div>
