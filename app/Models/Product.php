@@ -23,7 +23,6 @@ class Product extends Model
         'kondisi_surat',
         'kondisi_mesin',
         'transmision',
-        'passenger'
     ];
     public function user()
     {

@@ -30,9 +30,17 @@ class HomepageController extends Controller
 
     public function allProduct()
     {
-        $product = Product::where('status', 'dijual')
+        $product_dijual = Product::where('status', 'dijual')
             ->orderBy('created_at', 'desc')
             ->get(['id', 'title', 'price', 'transmision', 'passenger', 'gambar1', 'status']);
+
+        $product_terjual = Product::where('status', 'terjual')
+                    ->orderBy('created_at', 'desc')
+                    ->limit(5) // Membatasi hanya 5 produk dengan status 'terjual'
+                    ->get(['id', 'title', 'price', 'transmision', 'passenger', 'gambar1', 'status']);
+
+        // Gabungkan produk 'dijual' dan 'terjual'
+        $product = $product_dijual->merge($product_terjual);
         return view('public.all-product', compact('product'));
     }
 

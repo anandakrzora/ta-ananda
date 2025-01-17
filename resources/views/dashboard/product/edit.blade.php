@@ -130,13 +130,6 @@
                     @enderror
                 </div>
 
-                <div class="form-group">
-                    <label>Penumpang</label>
-                    <input type="text" name="passenger" class="form-control" placeholder="Masukkan Jumlah Penumpang" value="{{ old('passenger', $product->passenger) }}">
-                    @error('passenger')
-                        <div class="alert alert-danger mt-2">{{ $message }}</div>
-                    @enderror
-                </div>
                 
                 <!-- Add other condition fields similarly -->
 

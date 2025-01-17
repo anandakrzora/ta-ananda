@@ -27,7 +27,6 @@ return new class extends Migration
             $table->string('kondisi_mesin')->nullable(); // kondisi_mesin dengan tipe varchar (nullable)
             $table->enum('status', ['dijual', 'terjual']); // status dengan tipe enum
             $table->string('transmision')->nullable(); // transmision dengan tipe varchar (nullable)
-            $table->integer('passenger')->nullable(); // passenger dengan tipe integer (nullable)
             $table->timestamps(); // created_at dan updated_at otomatis
 
             $table->foreign('id_user')
