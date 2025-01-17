@@ -22,6 +22,11 @@ class GaleryController extends Controller
     {
         $request->validate([
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ],[
+            'image.required' => 'Gambar wajib diisi',
+            'image.image' => 'File harus berupa gambar',
+            'image.mimes' => 'File harus berupa gambar dengan format jpeg, png, jpg, gif, svg',
+            'image.max' => 'Ukuran gambar maksimal 2MB',
         ]);
         if ($request->hasFile('image')) {
             $extension = $request->file('image')->getClientOriginalExtension();
