@@ -36,6 +36,6 @@
 
     </div>
     <div class="flex justify-center sm:justify-center md:justify-end">
-        <p class="text-sm text-white">Copyright 2024 ・ UD Bawa Motor</p>
+        <p class="text-sm text-white">Copyright 2025 ・ UD Bawa Motor</p>
     </div>
 </footer>

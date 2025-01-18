@@ -15,7 +15,7 @@
     <div>
         @include('public.layout.partials.navbar')
         <div class="max-w-[85rem] px-4 sm:px-6 lg:px-8 mt-5 mx-auto">
-            <p class="text-gray-400"> <a href="{{ route('product-all') }}">Product / </a>
+            <p class="text-gray-400"> <a href="{{ route('product-all') }}">Produk / </a>
                 <span class="text-red-600 font-medium text-base text-lg">{{ $product->title }}</span>
             </p>
         </div>

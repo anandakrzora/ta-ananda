@@ -2,7 +2,7 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="mb-16 text-center">
             <h2 class="text-4xl font-bold text-gray-800">Pelanggan Kami yang Puas!</h2>
-            <span class="text-md text-gray-500 font-medium block mt-4">GALERY TESTIMONIAL</span>
+            <span class="text-md text-gray-500 font-medium block mt-4">Galeri Testimoni</span>
         </div>
 
         <!-- Slider -->
