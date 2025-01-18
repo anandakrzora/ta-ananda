@@ -46,7 +46,7 @@
                                 <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
                                 <circle cx="12" cy="7" r="4"></circle>
                             </svg>
-                            Product
+                            Produk
                         </a>
 
                         <a class="p-2 flex items-center text-sm text-gray-800 hover:text-red-500 hover:font-bold focus:outline-none focus:text-gray-500" href="{{ url('/#testimoni') }}">
@@ -56,7 +56,7 @@
                                 <path d="M22 13a18.15 18.15 0 0 1-20 0"></path>
                                 <rect width="20" height="14" x="2" y="6" rx="2"></rect>
                             </svg>
-                            Galery
+                            Galeri
                         </a>
 
                         <a class="p-2 flex items-center text-sm text-gray-800 hover:text-red-500 hover:font-bold focus:outline-none focus:text-gray-500" href="{{ url('/#contact') }}">

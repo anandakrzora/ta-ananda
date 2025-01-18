@@ -3,7 +3,7 @@
 
         <!-- First Element -->
         <div class="col-span-2 lg:col-span-1">
-            <a class="text-xs font-semibold text-white uppercase">Follow Us</a>
+            <a class="text-xs font-semibold text-white uppercase">Ikuti Kami</a>
             <!-- Social Brands -->
             
             <div class="space-x-4 mt-4">
@@ -27,9 +27,9 @@
         <div class="col-span-2 lg:col-span-1">
             <h4 class="text-xs font-semibold text-white uppercase">Page</h4>
             <ul class="mt-3 space-y-2 text-sm text-white">
-                <li><a class="hover:text-slate-400" href="#about">About</a></li>
-                <li><a class="hover:text-slate-400" href="#product">Product</a></li>
-                <li><a class="hover:text-slate-400" href="#testimoni">Galery</a></li>
+                <li><a class="hover:text-slate-400" href="#about">Tentang Kami</a></li>
+                <li><a class="hover:text-slate-400" href="#product">Produk</a></li>
+                <li><a class="hover:text-slate-400" href="#testimoni">Galeri</a></li>
                 <li><a class="hover:text-slate-400" href="#contact">Kontak Kami</a></li>
             </ul>
         </div>

@@ -2,7 +2,7 @@
 <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto" id="product">
     <!-- Title -->
     <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-      <h2 class="text-2xl font-bold md:text-4xl md:leading-tight mb-10">Product</h2>
+      <h2 class="text-2xl font-bold md:text-4xl md:leading-tight mb-10">Produk</h2>
     </div>
     <!-- End Title -->
   
@@ -47,14 +47,14 @@
 
         <ul class="mt-2">
           <li class="flex">
-            <p class="mr-auto text-gray-600 text-sm">Price</p>
+            <p class="mr-auto text-gray-600 text-sm">Harga</p>
             <p class="ml-auto text-gray-800 text-base">Rp. {{ number_format($p->price, 0, ',', '.') }}</p>
           </li>
         </ul>
 
         <!-- Buttons -->
         <a class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-red-600 text-white hover:bg-red-700 focus:outline-none focus:bg-red-700 disabled:opacity-50 disabled:pointer-events-none mt-4" href="{{ route('product-detail', $p->id) }}">
-          More Detail
+          Lihat lebih detail 
           <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
         </a>
         <!-- End Buttons -->
@@ -100,14 +100,14 @@
 
         <ul class="mt-2">
           <li class="flex">
-            <p class="mr-auto text-gray-600 text-sm">Price</p>
+            <p class="mr-auto text-gray-600 text-sm">Harga</p>
             <p class="ml-auto text-gray-800 text-base">Rp. -</p>
           </li>
         </ul>
 
         <!-- Buttons -->
         <a class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-red-600 text-white hover:bg-red-700 focus:outline-none focus:bg-red-700 disabled:opacity-50 disabled:pointer-events-none mt-4" href="#">
-          More Detail
+          Lihat lebih detail 
           <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
         </a>
         <!-- End Buttons -->
@@ -124,7 +124,7 @@
     <!-- Buttons -->
     <div class="mt-12 mb-12 flex justify-center">
         <a class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent text-red-600 border-red-600 hover:border-red-700 disabled:opacity-50 disabled:pointer-events-none" href="{{ route('product-all') }}">
-            Show all vehicles 
+          Liat produk lainnya 
           <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
         </a>
       </div>

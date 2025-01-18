@@ -9,7 +9,7 @@
                   Kontak Kami
                 </h1>
                 <p class="mt-8 mb-5 text-gray-600 text-sm">
-                    Visit Our office in the Denpasar area by clicking on the map Bawa Motor Second
+                  Kunjungi kantor kami di daerah Denpasar dengan klik pada maps bawa motor second
                 </p>
             </div>
             <div class="flex flex-col gap-y-5">
@@ -21,7 +21,7 @@
                 </a>
                 <div class="flex gap-x-3">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock text-red-600"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                  <p class="text-gray-600 font-light">Monday - Saturday until 6 PM </p>
+                  <p class="text-gray-600 font-light">Senin - Sabtu sampai 18.00 WITA </p>
                 </div>
                 <a href="https://wa.me/6282144428903?text=Saya%20ingin%20menanyakan%20tentang%20produk%20ini..." target="_blank">
                     <div class="flex gap-x-3">
